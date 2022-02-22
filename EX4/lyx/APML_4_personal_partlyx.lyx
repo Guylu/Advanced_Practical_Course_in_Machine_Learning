@@ -1,0 +1,1590 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{fullpage}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "David"
+\font_typewriter "default" "Curlz MT"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sumin}{\sum_{i=1}^{n}}
+{\sum_{i=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjn}{\sum_{j=1}^{n}}
+{\sum_{j=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumim}{\sum_{i=1}^{m}}
+{\sum_{i=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjm}{\sum_{j=1}^{m}}
+{\sum_{j=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumik}{\sum_{i=1}^{k}}
+{\sum_{i=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjk}{\sum_{j=1}^{k}}
+{\sum_{j=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkn}{\sum_{k=1}^{n}}
+{\sum_{k=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumnk}{\sum_{n=1}^{k}}
+{\sum_{n=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkm}{\sum_{k=1}^{m}}
+{\sum_{k=1}^{m}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ser}[3]{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vn}{v_{1},v_{2},...v_{n}}
+{v_{1},v_{2},...v_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vm}{v_{1},v_{2},...v_{m}}
+{v_{1},v_{2},...v_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}{u_{1},u_{2},...u_{n}}
+{u_{1},u_{2},...u_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{u_{1},u_{2},...u_{m}}
+{u_{1},u_{2},...u_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vk}{v_{1},v_{2},...v_{k}}
+{v_{1},v_{2},...v_{k}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\vecmul}[6]{\left[\begin{matrix}#1\\
+ #2\\
+ #3 
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+ #5\\
+ #6 
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+ \left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+ \left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right) 
+\end{matrix}\right]}
+{\left[\begin{matrix}#1\\
+#2\\
+#3
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+#5\\
+#6
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+\left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+\left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right)
+\end{matrix}\right]}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\lim}[1]{\lim_{n\rightarrow\infty}\left(#1\right)}
+{\lim_{n\rightarrow\infty}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\rank}{\text{Rank}}
+{\text{Rank}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\im}{\text{Im}}
+{\text{Im}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sp}{\text{Span}}
+{\text{Span}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyF}{\mathscr{F}}
+{\mathscr{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyB}{\mathscr{B}}
+{\mathscr{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseA}{\mathcal{A}}
+{\mathcal{A}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseB}{\mathcal{B}}
+{\mathcal{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseC}{\mathcal{C}}
+{\mathcal{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\FF}{\mathbb{F}}
+{\mathbb{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\CC}{\mathbb{C}}
+{\mathbb{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\RR}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\QQ}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\NN}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ZZ}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliCupDot}{\mathbin{\cupdot}}
+{\mathbin{\dot{\cup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliBigCupDot}{\mathbin{\bigcupdot}}
+{\mathbin{\dot{\bigcup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\PP}{\mathbb{P}}
+{\mathbb{P}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\EE}{\mathbb{E}}
+{\mathbb{E}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\nab}{\overline{\nabla}}
+{\overline{\nabla}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\supp}{\text{Supp}}
+{\text{Supp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\geo}{\text{Geo}}
+{\text{Geo}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\bin}{\text{Bin}}
+{\text{Bin}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ber}{\text{Ber}}
+{\text{Ber}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\poi}{\text{Poi}}
+{\text{Poi}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\exp}{\text{Exp}}
+{\text{Exp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\cov}{\text{Cov}}
+{\text{Cov}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\var}{\text{Var}}
+{\text{Var}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sinc}{\text{sinc}}
+{\text{sinc}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ra}{\text{\ensuremath{\rightarrow}}}
+{\text{\ensuremath{\rightarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\la}{\text{\ensuremath{\leftarrow}}}
+{\text{\ensuremath{\leftarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\iff}{\text{\ensuremath{\Leftrightarrow}}}
+{\text{\Leftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\E}{\text{\ensuremath{\exists}}}
+{\text{\ensuremath{\exists}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\RA}{\text{\ensuremath{\Rightarrow}}}
+{\text{\ensuremath{\Rightarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\LA}{\text{\ensuremath{\Leftarrow}}}
+{\text{\ensuremath{\Leftarrow}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\li}{\text{\ensuremath{\langle}}}
+{\text{\langle}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ri}{\rangle}
+{\text{\rangle}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}{\begin{bmatrix}\end{bmatrix}}
+{\begin{bmatrix}\end{bmatrix}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\T}{^{\intercal}}
+{^{\intercal}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\xor}{\oplus}
+{\oplus}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\norm}{\Vert}
+{\Vert}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\2}{^{2}}
+{^{2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\and}{\wedge}
+{\wedge}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Title
+67750 | Advanced Practical Course in Machine Learning
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\xout default
+\lang hebrew
+|
+\xout off
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+Ex
+\lang hebrew
+ 
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\end_layout
+
+\begin_layout Author
+Guy Lutsker 207029448
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Implementation of Reinforcement Learning
+\end_layout
+
+\begin_layout Subsection
+Q-Learning
+\end_layout
+
+\begin_layout Standard
+To explore this algorithm I decided to construct a linear neural network
+ - it is able to see the 9 cells around the snakes head (including the head)
+ and has 2 linear layers with the same width as the input, with Relu activation.
+ using this network I am able to evaluate algorithm.
+ 
+\end_layout
+
+\begin_layout Standard
+A note of graphs in this submission - I ran a lot of analysis and to fit
+ all the graphs I had to make them smaller.
+ I think that if you zoom into them in the resulting PDF you can still see
+ everything you need, but in case it doesn't work I added to each graph's
+ description a link to a web full resolution representation.
+ 
+\end_layout
+
+\begin_layout Standard
+Also, this report is 5 pages long, I am sorry for that, but I got your approveme
+nt for this :)
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\gamma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first thing I wanted to evaluate is the effect of the 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ hyper-parameter has on the reward.
+ 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is the discount factor for future reward, the higher 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is, the more we take the future reward in account when calculating our
+ optimal next action.
+ In order to test this effect I wanted to run different 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ values on the Q leaning framework.
+ I ran 
+\begin_inset Formula $\gamma\in[0.1,...,0.8]$
+\end_inset
+
+ and for robustness sake I wanted to run each value for 4 iteration to get
+ a better picture of the effect (Why 4? because its a nice even number,
+ and mostly because it takes ALOT of time to run so many models and I had
+ to have a bound).
+ In addition I decided to run all the models for 200 thousand steps for
+ a good measure of how they did.
+ Results are shown in Figure.1 (100% smoothed, as all of my graphs):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename qmet_g_test2.png
+	lyxscale 60
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rewards in Q-Learning with a simple linear neural network on different 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ values
+\begin_inset CommandInset href
+LatexCommand href
+name "FullResolution"
+target "https://www.cs.huji.ac.il/~guy_lutsker/APML.EX4.Figure.1%20-%20qnet_g_test.png"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+As can be seen.
+ the robustness argument was important since the run can differ by a certain
+ value and we should take into account the variance.
+ After thinking about for a while I decided that a 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ factor of 0.6 is optimal and decided to continue for this value.
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another important hyper-parameter is 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+, this value accounts for the Exploration/Exploitation ratio, essentially
+ it is the probability of choosing to explore, our world randomly.
+ In order to choose the optimal 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ I wanted to run several value if it.
+ Again running for 
+\begin_inset Formula $\varepsilon\in[0.1,...,0.9]$
+\end_inset
+
+ for 4 iteration each, with 100 thousand steps(lower here since we have
+ a base measure for 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ that should ensure positive convergence for the rewards, and if we don't
+ converge within 100k steps this means we chose a bad hyper-parameter).
+ Graph of rewards for different 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ values:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename qnet_eps_test.png
+	lyxscale 60
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rewards in Q-Learning with a simple linear neural network on different 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ values on 
+\begin_inset Formula $\gamma=0.6$
+\end_inset
+
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "FullResolution"
+target "https://www.cs.huji.ac.il/~guy_lutsker/APML.EX4.Figure.2 - qnet_eps_test.png"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From these graphs, I decided to continue with 
+\begin_inset Formula $\varepsilon=0.2$
+\end_inset
+
+ as it seemed as though it might bring optimal results.
+\end_layout
+
+\begin_layout Subsubsection
+Clipped Gradient
+\end_layout
+
+\begin_layout Standard
+A common problem one might encounter in these kind of leaning algorithms
+ is a problem of 
+\begin_inset Quotes eld
+\end_inset
+
+exploding gradients
+\begin_inset Quotes erd
+\end_inset
+
+.
+ This term refers to a phenomena in which the gradients we get from the
+ model are too large and they might throw our model out of order.
+ To combat this phenomena we employ a method of 
+\begin_inset Quotes eld
+\end_inset
+
+clipping
+\begin_inset Quotes erd
+\end_inset
+
+ the gradient - meaning taking 
+\begin_inset Formula $\nabla^{'}=min\{\nabla,bound\}$
+\end_inset
+
+ where 
+\begin_inset Formula $\nabla$
+\end_inset
+
+ denoted our returned 
+\begin_inset Quotes eld
+\end_inset
+
+real
+\begin_inset Quotes erd
+\end_inset
+
+ gradient, and 
+\begin_inset Formula $\nabla^{'}$
+\end_inset
+
+ denoted our clipped gradient.
+ Here I trued to evaluate my model with runs of clipped v.s unclipped gradients,
+ with 
+\series bold
+
+\begin_inset Formula $bound=1$
+\end_inset
+
+ 
+\series default
+.
+ To reach a more educated conclusion, since there were only two options,
+ I decided to up my number of runs per option to 8, and to calculate the
+ mean and std deviation of each option:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename clipped_grad_qnet.png
+	lyxscale 60
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rewards in Q-Learning with a simple linear neural network, 
+\begin_inset Formula $\gamma=0.6,\varepsilon=0.2$
+\end_inset
+
+ on clipped v.s unclipped gradients, with 
+\series bold
+
+\begin_inset Formula $bound=1$
+\end_inset
+
+
+\series default
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "FullResolution"
+target "https://www.cs.huji.ac.il/~guy_lutsker/APML.EX4.Figure.3 - clipped_grad_qnet.png"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+As with most of the choices in this exercise, the results are very inconclusive,
+ but the clipped rewards were slightly better, and with lower variance,
+ and so I decided to go with them from now on.
+\end_layout
+
+\begin_layout Subsubsection
+Optimizers & Learning Rate
+\end_layout
+
+\begin_layout Standard
+The choice of optimizers and a good leaning rate is also very important.
+ Here I want to ovulate the Adam and the RMSProp optimizers on different
+ learning rates to choose the optimal option: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Qnet_opt_test.png
+	lyxscale 60
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rewards in Q-Learning with a simple linear neural network,
+\begin_inset Formula $\gamma=0.6,\varepsilon=0.2$
+\end_inset
+
+, clipped gradient, on Adam and the RMSProp optimizers on different learning
+ rates 
+\begin_inset CommandInset href
+LatexCommand href
+name "FullResolution"
+target "https://www.cs.huji.ac.il/~guy_lutsker/APML.EX4.Figure.4 - Qnet_opt_test.png"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here I decided to go with RMSProp with 
+\begin_inset Formula $lr=1\times10^{-3}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Normalization
+\end_layout
+
+\begin_layout Standard
+Normalization of the reward can contribute to large changes to the gradients
+ of the model, and so are another excellent candidate to try and optimize.
+ Results for this method for Q-Learning is at section 1.2.5(because of space
+ constrains).
+ 
+\end_layout
+
+\begin_layout Subsection
+Vanilla REINFORCE
+\end_layout
+
+\begin_layout Standard
+This is considered a more advanced algorithm and we learned its pseudo code
+ in the recitation.
+ To explore this algorithm I decided to construct both a linear neural network
+ and a convolutional one - as before it is able to see the 9 cells around
+ the snakes head (including the head) and has 2 linear/convolutional layers.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\gamma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As mentioned before I would like to evaluate different 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ values for best performance:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename vanila_g_test.png
+	lyxscale 60
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rewards in Vanilla REINFORCE with a simple linear neural network on different
+ 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ values 
+\begin_inset CommandInset href
+LatexCommand href
+name "FullResolution"
+target "https://www.cs.huji.ac.il/~guy_lutsker/APML.EX4.Figure.5 - vanila_g_test.png"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It seems a though best results are obtained by 
+\begin_inset Formula $\gamma=0.8$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A graph from the convolution model:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename vanila_conv_g_test.png
+	lyxscale 60
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rewards in Vanilla with a convolutional neural network on different 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ values 
+\begin_inset CommandInset href
+LatexCommand href
+name "FullResolution"
+target "https://www.cs.huji.ac.il/~guy_lutsker/APML.EX4.Figure.6 - vanila_conv_g_test.png"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Unfortunately I was not able to make this model converge to a positive reward
+ :( This was very surprising to me since I actually expected this model
+ to do better than a simple linear model for several reasons: 1.
+ for entirely naive reasons I hoped that a more complex model will yield
+ better results.
+ 2.
+ our input is a window into the snakes world and I expected that a convolutional
+ model will be better at analyzing such 2D data.
+ But I was wrong, and so I decided to move on with the linear model.
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The vanilla framework required 
+\begin_inset Formula $\varepsilon=0$
+\end_inset
+
+ but it introduced a new hyper-parameter 
+\begin_inset Formula $\alpha.$
+\end_inset
+
+ In this model we are able to 
+\begin_inset Quotes eld
+\end_inset
+
+inject
+\begin_inset Quotes erd
+\end_inset
+
+ entropy to the equation to try and optimize our rewards- 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ denoted the weight we give to the entropy in the optimization problem.
+ Here I wanted to plot the effect of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ on our linear model with 
+\begin_inset Formula $\gamma=0.8$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename alpha_test.png
+	lyxscale 60
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rewards in Vanilla with a simple linear neural network 
+\begin_inset Formula $\gamma=0.8$
+\end_inset
+
+ (not 0.6) with different 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values 
+\begin_inset CommandInset href
+LatexCommand href
+name "FullResolution"
+target "https://www.cs.huji.ac.il/~guy_lutsker/APML.EX4.Figure.7 - .png"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Decided to continue with 
+\begin_inset Formula $\alpha=0.1$
+\end_inset
+
+ for optimal results.
+\end_layout
+
+\begin_layout Subsubsection
+Clipped Gradient
+\end_layout
+
+\begin_layout Standard
+As mentioned in Q-Learning, I wanted to see how a clipped gradient will
+ effect our results.
+ Again I decided to go with the clipped gradient for the same reasons:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename clipped_grad_vanila.png
+	lyxscale 60
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rewards in Q-Learning with a simple linear neural network 
+\begin_inset Formula $\gamma=0.8,\alpha=0.1$
+\end_inset
+
+ for clipped/unclipped gradients 
+\begin_inset CommandInset href
+LatexCommand href
+name "FullResolution"
+target "https://www.cs.huji.ac.il/~guy_lutsker/APML.EX4.Figure.8 - clipped_grad_vanila.png"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Optimizers & Learning Rate
+\end_layout
+
+\begin_layout Standard
+And once more, deciding for an optimizer and a learning rate.
+ I deiced to go with Adam on 
+\begin_inset Formula $lr=1\times10^{-4}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Vanila_opt_test.png
+	lyxscale 60
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rewards in Vanilla with a simple linear neural network 
+\begin_inset Formula $\gamma=0.8,\alpha=0.1$
+\end_inset
+
+, clipped gradient different 
+\begin_inset Formula $lr$
+\end_inset
+
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "FullResolution"
+target "https://www.cs.huji.ac.il/~guy_lutsker/APML.EX4.Figure.9 - Vanila_opt_test.png"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Normalization
+\end_layout
+
+\begin_layout Standard
+As mentioned in section 1.1.5 normalization of the reward can contribute to
+ large changes to the gradients of the model.
+ Here I review the changes different normalization methods have on the reward
+ where we have 1.
+ No normalization.
+ 2.
+ Dividing by 5.
+ 3.
+ applying 
+\begin_inset Formula $Reward_{new}=\frac{Reward-\mu_{Reward}}{\sigma_{Reward}}.$
+\end_inset
+
+ 4.
+ applying 
+\begin_inset Formula $Reward_{new}=\frac{Reward-min\{Reward\}}{max\{Reward\}-min\{Reward\}}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename norm_test.png
+	lyxscale 60
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rewards in Q-Learning/Vanilla on final parameters in each 
+\begin_inset CommandInset href
+LatexCommand href
+name "FullResolution"
+target "https://www.cs.huji.ac.il/~guy_lutsker/APML.EX4.FIgure.10 - norm_test.png"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Q-Learning:
+\series default
+ Interestingly enough normalization here only made thing worst, way worst,
+ since all rewards converged to a negative value for some reason.
+ The logic behind the reward normalization is that it stabilizes training,
+ high magnitude rewards might cause instability because of exploding gradients.
+ and here diving by 5 almost achieves a positive value(although still worst
+ than no normalization at all), all all other normalization methods fail
+ miserably...
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Vanilla REINFORCE: 
+\series default
+Here the situation is more complex, while Linear normalization seemed to
+ fail (converged to 0 on all iterations), and still no normalization seems
+ to beat all other normalization methods, the difference here is not as
+ clear.
+ It looks as though dividing by 5 and standard normalization achieve similar
+ results.
+ Its hard for me to explain exactly what is going on here.
+\begin_inset CommandInset href
+LatexCommand href
+name "hi"
+target "https://www.cs.huji.ac.il/~guy_lutsker/2d_randdata_MDS_on_3d_graph.html"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
