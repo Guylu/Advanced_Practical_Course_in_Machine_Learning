@@ -1,0 +1,1827 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{fullpage}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "David"
+\font_typewriter "default" "Curlz MT"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sumin}{\sum_{i=1}^{n}}
+{\sum_{i=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjn}{\sum_{j=1}^{n}}
+{\sum_{j=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumim}{\sum_{i=1}^{m}}
+{\sum_{i=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjm}{\sum_{j=1}^{m}}
+{\sum_{j=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumik}{\sum_{i=1}^{k}}
+{\sum_{i=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjk}{\sum_{j=1}^{k}}
+{\sum_{j=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkn}{\sum_{k=1}^{n}}
+{\sum_{k=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumnk}{\sum_{n=1}^{k}}
+{\sum_{n=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkm}{\sum_{k=1}^{m}}
+{\sum_{k=1}^{m}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ser}[3]{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vn}{v_{1},v_{2},...v_{n}}
+{v_{1},v_{2},...v_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vm}{v_{1},v_{2},...v_{m}}
+{v_{1},v_{2},...v_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}{u_{1},u_{2},...u_{n}}
+{u_{1},u_{2},...u_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{u_{1},u_{2},...u_{m}}
+{u_{1},u_{2},...u_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vk}{v_{1},v_{2},...v_{k}}
+{v_{1},v_{2},...v_{k}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\vecmul}[6]{\left[\begin{matrix}#1\\
+ #2\\
+ #3 
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+ #5\\
+ #6 
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+ \left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+ \left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right) 
+\end{matrix}\right]}
+{\left[\begin{matrix}#1\\
+#2\\
+#3
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+#5\\
+#6
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+\left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+\left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right)
+\end{matrix}\right]}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\lim}[1]{\lim_{n\rightarrow\infty}\left(#1\right)}
+{\lim_{n\rightarrow\infty}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\rank}{\text{Rank}}
+{\text{Rank}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\im}{\text{Im}}
+{\text{Im}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sp}{\text{Span}}
+{\text{Span}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyF}{\mathscr{F}}
+{\mathscr{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyB}{\mathscr{B}}
+{\mathscr{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseA}{\mathcal{A}}
+{\mathcal{A}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseB}{\mathcal{B}}
+{\mathcal{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseC}{\mathcal{C}}
+{\mathcal{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\FF}{\mathbb{F}}
+{\mathbb{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\CC}{\mathbb{C}}
+{\mathbb{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\RR}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\QQ}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\NN}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ZZ}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliCupDot}{\mathbin{\cupdot}}
+{\mathbin{\dot{\cup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliBigCupDot}{\mathbin{\bigcupdot}}
+{\mathbin{\dot{\bigcup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\PP}{\mathbb{P}}
+{\mathbb{P}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\EE}{\mathbb{E}}
+{\mathbb{E}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\nab}{\overline{\nabla}}
+{\overline{\nabla}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\supp}{\text{Supp}}
+{\text{Supp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\geo}{\text{Geo}}
+{\text{Geo}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\bin}{\text{Bin}}
+{\text{Bin}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ber}{\text{Ber}}
+{\text{Ber}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\poi}{\text{Poi}}
+{\text{Poi}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\exp}{\text{Exp}}
+{\text{Exp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\cov}{\text{Cov}}
+{\text{Cov}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\var}{\text{Var}}
+{\text{Var}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sinc}{\text{sinc}}
+{\text{sinc}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ra}{\text{\ensuremath{\rightarrow}}}
+{\text{\ensuremath{\rightarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\la}{\text{\ensuremath{\leftarrow}}}
+{\text{\ensuremath{\leftarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\iff}{\text{\ensuremath{\Leftrightarrow}}}
+{\text{\Leftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\E}{\text{\ensuremath{\exists}}}
+{\text{\ensuremath{\exists}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\RA}{\text{\ensuremath{\Rightarrow}}}
+{\text{\ensuremath{\Rightarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\LA}{\text{\ensuremath{\Leftarrow}}}
+{\text{\ensuremath{\Leftarrow}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\li}{\text{\ensuremath{\langle}}}
+{\text{\langle}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ri}{\rangle}
+{\text{\rangle}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}{\begin{bmatrix}\end{bmatrix}}
+{\begin{bmatrix}\end{bmatrix}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\T}{^{\intercal}}
+{^{\intercal}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\xor}{\oplus}
+{\oplus}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\norm}{\Vert}
+{\Vert}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\2}{^{2}}
+{^{2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\and}{\wedge}
+{\wedge}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Title
+67750 | Advanced Practical Course in Machine Learning
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\xout default
+\lang hebrew
+|
+\xout off
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+Exercise 
+\numeric on
+\lang hebrew
+2
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\end_layout
+
+\begin_layout Author
+Guy Lutsker 207029448
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Theoretical Part
+\end_layout
+
+\begin_layout Section*
+Question 1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted1.png
+	scale 24
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\forall y\in[i,k]$
+\end_inset
+
+ We would like to maximize 
+\begin_inset Formula $\mathbb{E}[\ell(S,\theta)]$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $\pi_{y}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\mathbb{E}[\ell(S,\theta)]=\sum_{i=1}^{N}\sum_{y=1}^{k}c_{i,y}\cdot ln(\pi_{y}\cdot\mathcal{N}(x_{i};\mu_{y},\Sigma_{y}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+According to the restrain: 
+\begin_inset Formula $\sum_{y=1}^{k}\pi_{y}=1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+And so, using Lagrange multiplier we get that we want maximize:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+f=\sum_{i=1}^{N}\sum_{y=1}^{k}c_{i,y}\cdot ln(\pi_{y}\cdot\mathcal{N}(x_{i};\mu_{y}.,\Sigma))-\lambda((\sum_{y=1}^{k}\pi_{y})-1)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Let us derive with respect to 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ and find its roots:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+0=\frac{\partial f}{\partial\lambda}=\sum_{y=1}^{k}\pi_{y}-1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+(a)\ra\sum_{y=1}^{k}\pi_{y}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Lets us also derive with respect to 
+\begin_inset Formula $\pi_{y}$
+\end_inset
+
+ 
+\begin_inset Formula $\forall y\in[k]$
+\end_inset
+
+ and find its roots:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+0=\frac{\partial f}{\partial\pi_{y}}=\sum_{i=1}^{N}\frac{c_{i,y}\cdot\mathcal{N}(x_{i};\mu_{y},\Sigma_{y})}{\pi_{y}\mathcal{N}(x_{i};\mu_{y},\Sigma_{y})}-\lambda=\sum_{i=1}^{N}\frac{c_{i,y}}{\pi_{y}}-\lambda
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+(b)\ra\sum_{i=1}^{N}\frac{c_{i,y}}{\lambda}=\pi_{y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Applying equation 
+\begin_inset Formula $(b)$
+\end_inset
+
+ onto equation 
+\begin_inset Formula $(a)$
+\end_inset
+
+ gets us:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\sum_{i=1}^{N}\sum_{y=1}^{k}\frac{c_{i,y}}{\lambda}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Recall the definition of 
+\begin_inset Formula $c_{i,y}=\mathbb{P}(y|x_{i}) $
+\end_inset
+
+and from Law of total probability we get that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{y=1}^{k}c_{i,y}=\sum_{y=1}^{k}\mathbb{P}(y|x_{i})=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\ra\sum_{i=1}^{N}\sum_{y=1}^{k}c_{i,y}=\lambda\ra\sum_{i=1}^{N}1=\lambda
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\ra N=\lambda
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+And so 
+\begin_inset Formula $\forall y\in[k]$
+\end_inset
+
+ we get 
+\begin_inset Formula $\pi_{y}=\frac{1}{N}\sum_{i=1}^{N}c_{i,y}$
+\end_inset
+
+ as required.
+\end_layout
+
+\begin_layout Standard
+\align center
+And so we win :)
+\end_layout
+
+\begin_layout Section*
+Question 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted2.png
+	scale 30
+	BoundingBox 0bp 1350bp 1813bp 1569bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted3.png
+	scale 30
+	BoundingBox 0bp 0bp 1831bp 750bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+For elegance sake let us set 
+\begin_inset Formula $2\pi=\tau$
+\end_inset
+
+ (cause tau is cooler than pi).
+\end_layout
+
+\begin_layout Standard
+\align center
+Firstly let us recall the definition of the normal distribution:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+(a):\mathcal{N}(x;\mu,\Sigma)=\frac{1}{\sqrt{|\tau\Sigma|}}\cdot exp(-\frac{1}{2}(x-\mu)\T\Sigma^{-1}(x-\mu))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Secondly recall that 
+\begin_inset Formula $\forall i$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbb{P}(x_{i})=\sum_{y=1}^{k}\pi_{y}\cdot\mathcal{N}(x_{i};0,r_{y}^{2}\cdot\Sigma)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+And so, our log likelihood is: 
+\begin_inset Formula $\sum_{i=1}^{N}\sum_{y=1}^{k}c_{i,y}\cdot ln(\pi_{y}\cdot\mathcal{N}(x_{i};0,r_{y}^{2}\cdot\Sigma))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Applying equation 
+\begin_inset Formula $(a)$
+\end_inset
+
+ gets us: 
+\begin_inset Formula $\sum_{i=1}^{N}\sum_{y=1}^{k}c_{i,y}\cdot ln(\pi_{y}\cdot\frac{1}{\sqrt{|\tau r_{y}^{2}\Sigma|}}\cdot exp(-\frac{1}{2}(x_{i}-0)\T(r_{y}^{2}\cdot\Sigma)^{-1}(x_{i}-0)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\overset{\text{Tending to the exp expression in numerator}}{=}\sum_{i=1}^{N}\sum_{y=1}^{k}c_{i,y}\cdot ln(\pi_{y}\cdot\frac{exp(-\frac{x_{i}\T\Sigma^{-1}x_{i}}{2r_{y}^{2}})}{\sqrt{|\tau r_{y}^{2}\Sigma|}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\overset{\text{Tending to the square root}}{=}\sum_{i=1}^{N}\sum_{y=1}^{k}c_{i,y}\cdot ln(\pi_{y}\cdot\frac{exp(-\frac{x_{i}\T\Sigma^{-1}x_{i}}{2r_{y}^{2}})}{\sqrt{(\tau)^{d}\cdot r_{y}^{2d}\cdot|\Sigma|}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\overset{\text{Tending to the \ensuremath{ln}}}{=}\sum_{i=1}^{N}\sum_{y=1}^{k}c_{i,y}\cdot(-\frac{x_{i}\T\Sigma^{-1}x_{i}}{2r_{y}^{2}}+ln(\pi_{y})-ln(((\tau)^{d}\cdot r_{y}^{2d}\cdot|\Sigma|)^{-\text{\ensuremath{\frac{1}{2}}}}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\overset{\text{Tending to the \ensuremath{ln(\sqrt{})}}}{=}\sum_{i=1}^{N}\sum_{y=1}^{k}c_{i,y}\cdot(-\frac{x_{i}\T\Sigma^{-1}x_{i}}{2r_{y}^{2}}+ln(\pi_{y})-\frac{1}{2}(d\cdot ln(\tau)+d\cdot ln(r_{y}^{2})+ln(|\Sigma|))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Now, let is derive this monster(lets call it 
+\begin_inset Formula $f$
+\end_inset
+
+) with respect to 
+\begin_inset Formula $r_{y}^{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial r_{y}^{2}}=\sum_{i=1}^{N}(\frac{c_{i,y}\cdot x_{i}\T\Sigma^{-1}\cdot x_{i}}{2\cdot r_{y}^{4}})-\frac{c_{i,y}\cdot d}{2r_{y}^{2}}=\frac{1}{2\cdot r_{y}^{4}}\cdot\sum_{i=1}^{N}(c_{i,y}\cdot x_{i}\T\Sigma^{-1}\cdot x_{i})-\frac{d}{2\cdot r_{y}^{2}}\sum_{i=1}^{N}c_{i,y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Now, lets find its roots 
+\begin_inset Formula $\forall y\in[k]$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\frac{1}{2\cdot r_{y}^{4}}\cdot\sum_{i=1}^{N}(c_{i,y}\cdot x_{i}\T\Sigma^{-1}\cdot x_{i})-\frac{d}{2\cdot r_{y}^{2}}\sum_{i=1}^{N}c_{i,y}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\ra\frac{1}{r_{y}^{2}}\cdot\sum_{i=1}^{N}(c_{i,y}\cdot x_{i}\T\Sigma^{-1}\cdot x_{i})=d\sum_{i=1}^{N}c_{i,y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\ra r_{y}^{2}=\frac{\sum_{i=1}^{N}(c_{i,y}\cdot x_{i}\T\Sigma^{-1}\cdot x_{i})}{d\cdot\sum_{i=1}^{N}c_{i,y}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+As required.
+\end_layout
+
+\begin_layout Standard
+\align center
+And so we win :)
+\end_layout
+
+\begin_layout Section*
+Question 3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted4.png
+	scale 24
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let us initialize the Gaussians to have the same parameters s.t 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall y\ \pi_{y}=\frac{1}{k},\mu_{y}=\mu.\Sigma_{y}=\Sigma
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notice that 
+\begin_inset Formula $\forall y,\mathcal{N}(x_{i};\mu_{y},\Sigma_{y})=q_{i}$
+\end_inset
+
+ , where 
+\begin_inset Formula $i\in[N],$
+\end_inset
+
+ 
+\begin_inset Formula $q\in\RR^{N}$
+\end_inset
+
+ is some constant vector.
+ 
+\end_layout
+
+\begin_layout Standard
+And lets look at the first two iterations of the EM algorithm:
+\end_layout
+
+\begin_layout Standard
+Iteration number 1:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+c_{i,y}=\frac{\pi_{y}\mathcal{N}(x_{i};\mu_{y},\Sigma_{y})}{\sum_{l=1}^{k}\pi_{l}\mathcal{N}(x_{i};\mu_{l},\Sigma_{l})}\overset{\mathcal{N}(x_{i};\mu_{y},\Sigma_{y})=q_{i}}{=}\frac{\pi_{y}q_{i}}{\sum_{l=1}^{k}\pi_{l}q_{i}}=\frac{q_{i}}{k\cdot q_{i}}=\frac{1}{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\pi_{y}=\frac{1}{N}\sum_{i=1}^{N}c_{i,y}=\frac{1}{N}\sum_{i=1}^{N}\frac{1}{k}=\frac{1}{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\mu_{y}=\frac{\sum_{i=1}^{N}c_{i,y}\cdot x_{i}}{\sum_{i=1}^{N}c_{i,y}}=\frac{\frac{1}{k}\cdot\sum_{i=1}^{N}x_{i}}{\frac{N}{k}}=\frac{1}{N}\cdot\sum_{i=1}^{N}x_{i}\overset{\text{Surprisingly so}}{=}\mu_{y}\overset{\text{Def.}}{=}\mu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\Sigma_{y}=\frac{\sum_{i=1}^{N}c_{i,y}(x_{i}-\mu_{y})(x_{i}-\mu_{y})\T}{\sum_{i=1}^{N}c_{i,y}}=\frac{\frac{1}{k}\sum_{i=1}^{N}(x_{i}-\mu)(x_{i}-\mu)\T}{\frac{N}{k}}=\frac{\sum_{i=1}^{N}(x_{i}-\mu)(x_{i}-\mu)\T}{N}=\Sigma_{\text{y}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And iteration number 2 :
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+c_{i,y}=\frac{\pi_{y}\mathcal{N}(x_{i};\mu_{y},\Sigma_{y})}{\sum_{l=1}^{k}\pi_{l}\mathcal{N}(x_{i};\mu_{l},\Sigma_{l})}\overset{\mathcal{N}(x_{i};\mu_{y},\Sigma_{y})=q_{i}}{=}\frac{\pi_{y}q_{i}}{\sum_{l=1}^{k}\pi_{l}q_{i}}=\frac{q_{i}}{k\cdot q_{i}}=\frac{1}{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\pi_{y}=\frac{1}{N}\sum_{i=1}^{N}c_{i,y}=\frac{1}{N}\sum_{i=1}^{N}\frac{1}{k}=\frac{1}{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\mu_{y}=\frac{\sum_{i=1}^{N}c_{i,y}\cdot x_{i}}{\sum_{i=1}^{N}c_{i,y}}=\frac{\frac{1}{k}\cdot\sum_{i=1}^{N}x_{i}}{\frac{N}{k}}=\frac{1}{N}\cdot\sum_{i=1}^{N}x_{i}\overset{\text{Surprisingly so}}{=}\mu_{y}\overset{\text{Def.}}{=}\mu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\Sigma_{y}=\frac{\sum_{i=1}^{N}c_{i,y}(x_{i}-\mu_{y})(x_{i}-\mu_{y})\T}{\sum_{i=1}^{N}c_{i,y}}=\frac{\frac{1}{k}\sum_{i=1}^{N}(x_{i}-\mu)(x_{i}-\mu)\T}{\frac{N}{k}}=\frac{\sum_{i=1}^{N}(x_{i}-\mu)(x_{i}-\mu)\T}{N}\overset{\text{Def.}}{=}\Sigma_{\text{y}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can see, the algorithm will assign the values to the variables - 
+\begin_inset Formula $c_{i,y}=\frac{1}{k},\pi_{y}=\frac{1}{k},\mu_{y}=\mu,\Sigma_{y}=\Sigma$
+\end_inset
+
+ .And so, since the termination of the algorithm depends of the convergence
+ of 
+\begin_inset Formula $c_{i,y}$
+\end_inset
+
+ (and 
+\begin_inset Formula $c_{i,y}$
+\end_inset
+
+ converges immediately to 
+\begin_inset Formula $\frac{1}{k})$
+\end_inset
+
+, all of the other variables(
+\begin_inset Formula $\pi_{y},\mu_{y},\Sigma_{y}$
+\end_inset
+
+) stay as they were initialized, And the algorithm is useless.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Practical Part
+\end_layout
+
+\begin_layout Section
+Preface
+\end_layout
+
+\begin_layout Standard
+In this section we were asked to code 3 models for denoising images.
+ The models were are MVN,GSM,ICA.
+ I will explain how I implemented each one.
+\end_layout
+
+\begin_layout Section
+Coding the Models
+\end_layout
+
+\begin_layout Subsection
+MVN
+\end_layout
+
+\begin_layout Standard
+The MVN model assumes the data comes from a multivariate Normal distribution,
+ and as we learned in class if the data comes from thisa kind of distribution
+ we can simply use the Weiner filter to find the optimal solutionto the
+ denoising problem.
+ In order to learn the parameters for this model i simply needed to calculate
+ the mean and covariance of the data.
+ While the denoising part, as i have said before simply uses the weiner
+ filter: 
+\begin_inset Formula 
+\[
+Weiner(y)=(\Sigma^{-1}+\frac{1}{\sigma^{2}}\cdot I)^{-1}\cdot(\Sigma^{-1}\mu+\frac{1}{\sigma^{2}}\cdot y)
+\]
+
+\end_inset
+
+Where x was our original picture, and 
+\begin_inset Formula $y=x+\sigma$
+\end_inset
+
+ (
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is some normal noise) , 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ represents our covariance matrix and 
+\begin_inset Formula $\mu$
+\end_inset
+
+ represents the mean.
+ Thi model was pretty much straight forward.
+ 
+\end_layout
+
+\begin_layout Subsection
+GSM
+\end_layout
+
+\begin_layout Standard
+The GSM model assumes our data comes from a Gaussian mixture of some sort,
+ meaning our data samples are generated from a mixture of a finite number(
+\begin_inset Formula $k$
+\end_inset
+
+) of Gaussian distributions of unknown parameters.
+ In order to learn the parameters of this model we will use the EM algorithm:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename EM.png
+	lyxscale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+EM Algorithm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+We will only need to learn the 
+\begin_inset Formula $\pi_{y}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{i,y}$
+\end_inset
+
+ since we assume a shared co-variance matrix and a 0 mean.
+ In addition we will have to calculate the 
+\begin_inset Quotes eld
+\end_inset
+
+weights
+\begin_inset Quotes erd
+\end_inset
+
+ of the Gaussian- 
+\begin_inset Formula $r_{y}$
+\end_inset
+
+ which are calculated i the following way: 
+\begin_inset Formula $r_{y}^{2}=\frac{\sumin c_{i,y}\cdot x_{i}\T\Sigma^{-1}x_{i}}{d\cdot\sumin c_{i,y}}.$
+\end_inset
+
+ Also we would like to work in log space, and so the this iterative process
+ will be logged.
+ In my code the learning process was done with using as efficiently as I
+ could - I tried to calculate everything i could before the while loop,
+ and saw that I could use the np.tile function to calculate the 
+\begin_inset Formula $x_{i}\T\Sigma^{-1}x_{i}$
+\end_inset
+
+ term which repeated all the time with different scalars beforehand.
+ And when looking at the 
+\begin_inset Formula $c_{i,y}$
+\end_inset
+
+ formula I tried to simplify it: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+ln(\mathcal{N}(x;0,\Sigma))=ln(\frac{1}{\sqrt{det(2\pi\Sigma)}}e^{-\frac{1}{2}r^{2}x\T\Sigma^{-1}x})=ln(\frac{1}{\sqrt{(2\pi)^{d}det(r^{2}\Sigma)}})-\frac{1}{2r^{2}}x_{i}\T\Sigma^{-1}x_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overset{\text{Simple Algebra}}{=}-\frac{d}{2}ln(2\pi)-\frac{d}{2}ln(r^{2})-\frac{1}{2}ln(|\Sigma|)-\frac{1}{2r^{2}}x_{i}\T\Sigma^{-1}x_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+My code reflects this simplification, and the iteration process stops once
+ the 
+\begin_inset Formula $c_{i,y}'s$
+\end_inset
+
+ converge, which in my test usually took around ~70 iteration.
+ The GSM denoising process, much like the MVN model, uses the Weiner filter,
+ with one big difference - it uses a weighed model of the Wiener formula.
+ Here we calculate weights 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ for each 
+\begin_inset Formula $k$
+\end_inset
+
+ of our Gaussians - where 
+\begin_inset Formula $c_{i}=\frac{\pi_{i}\mathcal{N}(y;0,\Sigma_{i}+\sigma^{2}I)}{\sumjk\pi_{j}\mathcal{N}(y;0,\Sigma_{j}+\sigma^{2}I)}$
+\end_inset
+
+ (We will once again work in log space, but no significant simplifications
+ here:( ).
+ And in the end we will calculate our result using a weighted Weiner formula:
+ 
+\begin_inset Formula $x_{denoised}=\sumik c_{i}Weiner_{i}(y)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+ICA
+\end_layout
+
+\begin_layout Standard
+The ICA model is general model in which we assume each of our variables
+ are sampled from a fixed linear combination of non Gaussians.
+ Specifically we assume that for our d dimensional sample vector(picture),
+ each coordinate is a random variable from a Gaussian mixture distribution.
+ And so in the model I relied heavily of my GSM implementation.
+ For learning the ICA model I first calculated the co-variance matrix, diagonali
+zed it, and multiplied my data by the resulting eigenvector matrix.
+ Next I took each coordinate from my sample data, and trained my learn_GSM
+ function to get 
+\begin_inset Formula $d$
+\end_inset
+
+ models i could then combine into the ICA_model object.
+ And in order to denoise the images I then again used the denoise_GSM function
+ for each of the test samples(multiplied by the eigenvector matrix).
+\end_layout
+
+\begin_layout Section
+Evaluating & Comparing Models
+\end_layout
+
+\begin_layout Standard
+Lets look at the results of the 3 models trained on 20,000 samples with
+ noise levels: 0.01, 0.05, 0.1, 0.2(top is noised, bottom is denoised):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename test.png
+	lyxscale 60
+	scale 115
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+1.
+ MVN Model Results 2.
+ GSM(k=5) Results 3.
+ ICA Model(k=5) Results.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/University/Year 3/Semester 1/67750 Advanced Practical Course in Machine Learning/Exs/EX2/big noise.png
+	lyxscale 60
+	scale 73
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An example of MNV With noise levels: 0.8, 0.9, 1(!)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First of all the results(at least to me) seem pretty impressive! All three
+ model cleaned the images well enough to identify the object in the original
+ images.
+ And at first glance its even hard to distinguish which model did better,
+ since they all preformed really good.
+ And in figure 3.
+ we can see that sometimes even with extreme noise where we can hardly see
+ the image, the model can still denoise it really well.
+ Lets look at some MSE graphs for each model to try and find out who's the
+ best! 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename test2.png
+	lyxscale 60
+	scale 75
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+MSE of Three Models(k=5 in last two models)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can see there isn't a clear distinction here either, and all 3 models
+ seem to work well.
+\end_layout
+
+\begin_layout Standard
+Also, just for fun, since the models worked really well even on really high
+ noise levels, I wanted to see whether it would benefit from running the
+ same algorithm over the denoised pictures, to see if it could denoise them
+ even further:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename denoisex2.png
+	lyxscale 60
+	scale 73
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Top:Denoised picture with original noise level 1.
+ Bottom: Denoised once more
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can see in figure 5.
+ attempting the denoising procedure again did not do anything to the picture.
+ I was initially motivated to do this, because I thought maybe the model
+ would be able to detect the 
+\begin_inset Quotes eld
+\end_inset
+
+graininess
+\begin_inset Quotes erd
+\end_inset
+
+ in the picture as the noise it originally was, and we would be able to
+ get an even better denoised image.
+ In retrospect this makes all the seance in the world, since our models
+ either use a system in which we search for a minima using the Wiener filter
+ case(of which we wouldst expect to fall out of), or an iterative process
+ - in the EM algorithm approach, and running the same algorithm on an image
+ that already went though the iterative process shouldn't add anything.
+ I decided to add this attempt to the report since I found this result interesti
+ng.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In addition, I wanted to see if changing the number of components(k) of
+ the GSM model will have an affect on the result, and both for GSM and ICA,
+ I couldn't see any significant difference, and the MSE graphs stayed the
+ same(didn't attach them because they were so similar to Figure 4.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

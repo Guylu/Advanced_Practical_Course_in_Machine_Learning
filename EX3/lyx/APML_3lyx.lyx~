@@ -1,0 +1,2692 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{fullpage}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "David"
+\font_typewriter "default" "Curlz MT"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sumin}{\sum_{i=1}^{n}}
+{\sum_{i=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjn}{\sum_{j=1}^{n}}
+{\sum_{j=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumim}{\sum_{i=1}^{m}}
+{\sum_{i=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjm}{\sum_{j=1}^{m}}
+{\sum_{j=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumik}{\sum_{i=1}^{k}}
+{\sum_{i=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjk}{\sum_{j=1}^{k}}
+{\sum_{j=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkn}{\sum_{k=1}^{n}}
+{\sum_{k=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumnk}{\sum_{n=1}^{k}}
+{\sum_{n=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkm}{\sum_{k=1}^{m}}
+{\sum_{k=1}^{m}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ser}[3]{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vn}{v_{1},v_{2},...v_{n}}
+{v_{1},v_{2},...v_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vm}{v_{1},v_{2},...v_{m}}
+{v_{1},v_{2},...v_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}{u_{1},u_{2},...u_{n}}
+{u_{1},u_{2},...u_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{u_{1},u_{2},...u_{m}}
+{u_{1},u_{2},...u_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vk}{v_{1},v_{2},...v_{k}}
+{v_{1},v_{2},...v_{k}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\vecmul}[6]{\left[\begin{matrix}#1\\
+ #2\\
+ #3 
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+ #5\\
+ #6 
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+ \left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+ \left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right) 
+\end{matrix}\right]}
+{\left[\begin{matrix}#1\\
+#2\\
+#3
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+#5\\
+#6
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+\left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+\left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right)
+\end{matrix}\right]}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\lim}[1]{\lim_{n\rightarrow\infty}\left(#1\right)}
+{\lim_{n\rightarrow\infty}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\rank}{\text{Rank}}
+{\text{Rank}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\im}{\text{Im}}
+{\text{Im}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sp}{\text{Span}}
+{\text{Span}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyF}{\mathscr{F}}
+{\mathscr{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyB}{\mathscr{B}}
+{\mathscr{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseA}{\mathcal{A}}
+{\mathcal{A}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseB}{\mathcal{B}}
+{\mathcal{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseC}{\mathcal{C}}
+{\mathcal{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\FF}{\mathbb{F}}
+{\mathbb{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\CC}{\mathbb{C}}
+{\mathbb{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\RR}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\QQ}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\NN}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ZZ}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliCupDot}{\mathbin{\cupdot}}
+{\mathbin{\dot{\cup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliBigCupDot}{\mathbin{\bigcupdot}}
+{\mathbin{\dot{\bigcup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\PP}{\mathbb{P}}
+{\mathbb{P}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\EE}{\mathbb{E}}
+{\mathbb{E}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\nab}{\overline{\nabla}}
+{\overline{\nabla}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\supp}{\text{Supp}}
+{\text{Supp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\geo}{\text{Geo}}
+{\text{Geo}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\bin}{\text{Bin}}
+{\text{Bin}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ber}{\text{Ber}}
+{\text{Ber}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\poi}{\text{Poi}}
+{\text{Poi}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\exp}{\text{Exp}}
+{\text{Exp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\cov}{\text{Cov}}
+{\text{Cov}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\var}{\text{Var}}
+{\text{Var}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sinc}{\text{sinc}}
+{\text{sinc}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ra}{\text{\ensuremath{\rightarrow}}}
+{\text{\ensuremath{\rightarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\la}{\text{\ensuremath{\leftarrow}}}
+{\text{\ensuremath{\leftarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\iff}{\text{\ensuremath{\Leftrightarrow}}}
+{\text{\Leftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\E}{\text{\ensuremath{\exists}}}
+{\text{\ensuremath{\exists}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\RA}{\text{\ensuremath{\Rightarrow}}}
+{\text{\ensuremath{\Rightarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\LA}{\text{\ensuremath{\Leftarrow}}}
+{\text{\ensuremath{\Leftarrow}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\li}{\text{\ensuremath{\langle}}}
+{\text{\langle}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ri}{\rangle}
+{\text{\rangle}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}{\begin{bmatrix}\end{bmatrix}}
+{\begin{bmatrix}\end{bmatrix}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\T}{^{\intercal}}
+{^{\intercal}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\xor}{\oplus}
+{\oplus}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\norm}{\Vert}
+{\Vert}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\2}{^{2}}
+{^{2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\and}{\wedge}
+{\wedge}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Title
+67750 | Advanced Practical Course in Machine Learning
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\xout default
+\lang hebrew
+|
+\xout off
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+Exercise 
+\numeric on
+\lang hebrew
+3
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\end_layout
+
+\begin_layout Author
+Guy Lutsker 207029448
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Theoretical Part
+\end_layout
+
+\begin_layout Section*
+Question 1
+\end_layout
+
+\begin_layout Standard
+\align center
+Show that 
+\begin_inset Formula $S=\frac{1}{n-1}\sumin(x_{i}-\bar{x})(x_{i}-\bar{x})\T$
+\end_inset
+
+ is PSD.
+ assume 
+\begin_inset Formula $\bar{x}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Firstly, let us recall that a matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ is PSD if 
+\begin_inset Formula $\forall v$
+\end_inset
+
+ it hold that 
+\begin_inset Formula $v\T Av\ge0.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+And so let us look at 
+\begin_inset Formula $v\T Sv=v\T(\frac{1}{n-1}\sumin(x_{i})(x_{i})\T)v=\frac{1}{n-1}\sumin v\T(x_{i})(x_{i})\T v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $=\frac{1}{n-1}\sumin(v\T x_{i})^{2}$
+\end_inset
+
+ which is a sum of non negatives, and so S is PSD as required.
+\end_layout
+
+\begin_layout Section*
+Question 2
+\end_layout
+
+\begin_layout Standard
+\align center
+Show that the data sits on a d-dimensional subspace 
+\begin_inset Formula $V\subset\mathbb{R}^{n}$
+\end_inset
+
+ n if and only if S is of rank d.
+ hint: show that S and X have the same rank.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Notice that since the mean is zero, 
+\begin_inset Formula $S$
+\end_inset
+
+ can be expressed as 
+\begin_inset Formula $S=\frac{1}{n-1}\sumin x_{i}x_{i}\T=\frac{1}{n-1}\sumin X\T X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+And so 
+\begin_inset Formula $S$
+\end_inset
+
+'s rank is equivalent to 
+\begin_inset Formula $X\T X$
+\end_inset
+
+'s and so we just need to show that 
+\begin_inset Formula $X$
+\end_inset
+
+ has the same rank as 
+\begin_inset Formula $X\T X.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+(sounds a lot like a problem we saw in IML last semester, where we needed
+ to show that 
+\begin_inset Formula $Ker(X)=Ker(X\T X)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+Conjecture
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+rank(X)=rank(X\T X)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Proof 1
+\series default
+: 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $rank(X)=dim(IM(X))\overset{Dimension\ Theorem}{=}dim(\mathbb{R}^{n})-dim(Ker(X))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\ra rank(X)=rank(X\T X)\iff dim(Ker(X))=dim(Ker(X\T X))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+So I will show a harder problem which is that the kernels are actually equal
+ 
+\begin_inset Formula $Ker(X\T)=Ker(XX\T)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+Proof taken from my exercise in IML last semester:
+\end_layout
+
+\begin_layout Quotation
+\align center
+
+\lang american
+Let 
+\begin_inset Formula $X\in\RR^{pXn}$
+\end_inset
+
+ be a matrix we will prove 
+\begin_inset Formula $Ker(X^{T})\subset Ker(XX^{T})\wedge Ker(XX^{T})\subset Ker(X^{T})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang american
+\begin_inset Formula 
+\[
+Ker(X^{T})\subset Ker(XX^{T}):
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\align center
+
+\lang american
+Let 
+\begin_inset Formula $v\in Ker(X^{T})$
+\end_inset
+
+ then 
+\begin_inset Formula $XX^{T}v=X\cdot0=0\ra v\in Ker(XX^{T})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang american
+\begin_inset Formula 
+\[
+Ker(XX^{T})\subset Ker(X^{T}):
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\align center
+
+\lang american
+let 
+\begin_inset Formula $v\in Ker(XX^{\T})\ra XX^{\T}v=0$
+\end_inset
+
+ lets look at 
+\begin_inset Formula $0=v^{\T}XX^{\T}v=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\align center
+
+\lang american
+\begin_inset Formula $(X^{\T}v)^{\T}(X^{\T}v)\ra X^{\T}v\overset{vector\ that\ orthogonal\ to\ itself\ is\ the\ 0\ vector}{=}0\ra v\in Ker(X^{\T})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Proof 2:
+\end_layout
+
+\begin_layout Standard
+\align center
+Let us use the Spectral theorem and rewrite 
+\begin_inset Formula $X$
+\end_inset
+
+ as 
+\begin_inset Formula $X=UDU^{*}$
+\end_inset
+
+ where 
+\begin_inset Formula $D$
+\end_inset
+
+ is diagonal and 
+\begin_inset Formula $U$
+\end_inset
+
+ is unitary and particularly, for our application, its full rank.
+ and so:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+X=UDU^{*}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+X\T X\overset{Spectral\ decomposition\ of\ X}{=}(UDU^{*})UDU^{*}=UDIDU^{*}=UD^{2}U^{*}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+And so since U is unitary we can say that 
+\begin_inset Formula $rank(X)=rank(UDU^{*})=rank(D)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+And since 
+\begin_inset Formula $D$
+\end_inset
+
+ is diagonal we know that its rank is the number of non zero column in the
+ matrix, and 
+\begin_inset Formula $D^{2}$
+\end_inset
+
+ has the same number of non zeros columns as 
+\begin_inset Formula $D$
+\end_inset
+
+ and so 
+\begin_inset Formula $rank(D)=rank(D^{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+And all together we get that:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+rank(X)=rank(UDU^{*})=rank(D)=rank(D^{2})=rank(UD^{2}U^{*})=rank(X\T X)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+And so : 
+\series default
+
+\begin_inset Formula 
+\[
+rank(X)=rank(S)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Question 3
+\end_layout
+
+\begin_layout Standard
+\align center
+Show that the new coordinates are the result of an isometry on the subspace
+ V .
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Recall that in PCA 
+\begin_inset Formula $S=UDU\T$
+\end_inset
+
+ and the new coordinates 
+\begin_inset Formula $\{y_{i}\}_{i=1}^{n}=\{U\T x_{i}\}_{i=1}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+We need to show that 
+\begin_inset Formula $\forall i\ \norm x_{i}\norm=\norm y_{i}\norm$
+\end_inset
+
+, then lets look at 
+\begin_inset Formula $\norm y_{i}\norm$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\norm y_{i}\norm\overset{Defenition}{=}\norm U\T x_{i}\norm\overset{\text{\ensuremath{\overset{\text{\ensuremath{x_{i}}can be represented as }}{\overset{\text{a linear combination of \ensuremath{U}}}{\text{s.t: \ensuremath{x_{i}=\sumin a_{i}u_{i}}}}}}}}{=}\norm U\T\sumin a_{i}u_{i}\norm=\norm\sumjn\sumin a_{i}u_{j}\T u_{i}\norm
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\overset{U\text{ is orthogonal}}{=}\norm\sumjn\sumin a_{i}u_{i}\delta_{i,j}\norm=\norm\sumin a_{i}u_{i}\norm=\norm x_{i}\norm
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Question 4
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename pasted1.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\norm\sum_{j\in N(i)}w_{j}z_{j}\norm^{2}=\li\sum_{j\in N(i)}w_{j}z_{j},\sum_{j\in N(i)}w_{j}z_{j}\ri=\sum_{i,j}w_{i}w_{j}z_{i}\T z_{j}\overset{G_{i,j}=z_{i}\T z_{j}}{=}\sum_{i,j}w_{i}w_{j}G_{i,j}\overset{by\ def}{=}w\T Gw
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Question 5
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename pasted2.png
+	scale 37
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Our restrain is 
+\begin_inset Formula $\sum_{i}w_{i}=1\iff w\T\boldsymbol{1=}1\iff w\T\boldsymbol{1}-1\boldsymbol{=}0,$
+\end_inset
+
+and so our function is 
+\begin_inset Formula $f(w,\lambda)=w\T Gw-\lambda(w\T\boldsymbol{1}-1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+deriving by 
+\begin_inset Formula $w$
+\end_inset
+
+ yield(remembering that 
+\begin_inset Formula $G$
+\end_inset
+
+ is symmetric):
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+\frac{\partial f}{\partial w}=w\T G+w\T G-\lambda\boldsymbol{1}=2w\T G-\lambda\boldsymbol{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+And so finding the roots of this function:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+2w\T G-\lambda\boldsymbol{1}=0\iff w\T=\frac{\lambda\boldsymbol{1}}{2G}=\frac{\lambda}{2}G^{-1}\boldsymbol{1}
+\]
+
+\end_inset
+
+and with respect to 
+\begin_inset Formula $w$
+\end_inset
+
+ instead of 
+\begin_inset Formula $w\T$
+\end_inset
+
+ we get:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+w=(\frac{\lambda}{2}G^{-1}\boldsymbol{1})\T=\frac{\lambda}{2}G^{-1}\boldsymbol{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+since 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is a scalar, G is symmetric, and 
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+ is not effected by transpose either.
+\end_layout
+
+\begin_layout Section*
+Question 6 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted3.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lets start with some definition: 
+\end_layout
+
+\begin_layout Standard
+We have our data 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ The first thing we do is define a pairwise similarity matrix using the
+ heat kernel with width 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L_{i,j}=exp(-\frac{\norm x_{i}-x_{j}\norm^{2}}{2\varepsilon})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Next we evaluate a diagonal normalization matrix 
+\begin_inset Formula $D_{i,i}=\sum_{j}L_{i,j}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+And a matrix 
+\begin_inset Formula $M$
+\end_inset
+
+ as a low dimensional representation of the data :
+\begin_inset Formula $M=D^{-1}L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notice that 
+\begin_inset Formula $M$
+\end_inset
+
+ is adjoint to a symmetric matrix 
+\begin_inset Formula $M_{s}$
+\end_inset
+
+ : 
+\begin_inset Formula $M_{s}=D^{\frac{1}{2}}MD^{-\frac{1}{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+And so 
+\begin_inset Formula $M,M_{s}$
+\end_inset
+
+ have the same eigenvalues.
+\end_layout
+
+\begin_layout Standard
+Denote 
+\begin_inset Formula $\{\lambda_{j}\}_{j=1}^{n-1}$
+\end_inset
+
+ as those eigenvalues, and 
+\begin_inset Formula $\{v_{j}\}_{j=1}^{n-1}$
+\end_inset
+
+ the eigenvectors of 
+\begin_inset Formula $M_{s},$
+\end_inset
+
+and 
+\begin_inset Formula $\phi_{j},\psi_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as the left and right eigenvectors of 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Notice that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall j\in[n-1]:\phi_{j}=v_{j}D^{\frac{1}{2}},\ \psi_{j}=v_{j}D^{-\frac{1}{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And since 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ are orthonormal to each other that means that::
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall i,j\in[n-1]:\li\phi_{j},\psi_{j}\ri=\delta_{i,j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that : 
+\begin_inset Formula $\phi_{0}(x_{i})=\frac{D_{i,i}}{\sum_{j}D_{j,j}}$
+\end_inset
+
+ with eigenvalue 1.
+\end_layout
+
+\begin_layout Standard
+Now, lets define the probability for time 
+\begin_inset Formula $t$
+\end_inset
+
+: 
+\begin_inset Formula $p(t,y|x)=\phi_{0}(y)+\sum_{j\ge1}a_{j}(x)\lambda_{j}^{t}\phi)j(y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\begin_inset Formula $a_{j}(x)=\psi_{j}(x).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And we would also like to quantify the similarity between any two points
+ according to the evolution of their probability distributions.
+ Specifically, we consider the following distance measure at time 
+\begin_inset Formula $t$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Set 
+\begin_inset Formula $w(y)=\frac{1}{\phi_{0}(y)}$
+\end_inset
+
+ and define:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D_{t}^{2}(x_{0},x_{1})=\norm p(t,y|x_{0})-p(t,y|x_{1})\norm_{w}^{2}=\sum_{y}(p(t,y|x_{0})-p(t,y|x_{1}))^{2}w(y)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Next denote the mapping between the original space and the first k eigenvectors
+ as the diffusion map:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Psi_{t}(x)=(\lambda_{1}^{t}\psi_{1}(x),\lambda_{2}^{t}\psi_{2}(x),...,\lambda_{k}^{t}\psi_{k}(x))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, FINALLY, to our main theorem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Theorem:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D_{t}^{2}(x_{0},x_{1})=\sum_{j\ge1}\lambda_{j}^{2t}(\psi_{j}(x_{0})-\psi_{j}(x_{1}))^{2}=\norm\Psi_{t}(x_{0})-\Psi_{t}(x_{1})\norm^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Proof:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since we know that 
+\begin_inset Formula $p(t,y|x)=\phi_{0}(y)+\sum_{j\ge1}a_{j}(x)\lambda_{j}^{t}\phi)j(y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And that 
+\begin_inset Formula $D_{t}^{2}(x_{0},x_{1})=\sum_{y}(p(t,y|x_{0})-p(t,y|x_{1}))^{2}w(y)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+We can say that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D_{t}^{2}(x_{0},x_{1})=\sum_{y}(\sum_{j}\lambda_{j}^{t}(\psi_{j}(x_{0})-\psi_{j}(x_{1}))\phi_{j}(y))^{2}\cdot\frac{1}{\phi_{0}(y)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and from 
+\begin_inset Formula $\forall j\in[n-1]:\phi_{j}=v_{j}D^{\frac{1}{2}},\ \psi_{j}=v_{j}D^{-\frac{1}{2}}$
+\end_inset
+
+ and from 
+\begin_inset Formula $\forall i,j\in[n-1]:\li\phi_{j},\psi_{j}\ri=\delta_{i,j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We get that 
+\begin_inset Formula $\sum_{y}(\sum_{j}\lambda_{j}^{t}(\psi_{j}(x_{0})-\psi_{j}(x_{1}))\phi_{j}(y))^{2}\cdot\frac{1}{\phi_{0}(y)}=\norm\Psi_{t}(x_{0})-\Psi_{t}(x_{1})\norm^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As required.
+\end_layout
+
+\begin_layout Part
+Practical Part
+\end_layout
+
+\begin_layout Section
+Implementation of Manifold Learning Algorithms
+\end_layout
+
+\begin_layout Subsection
+Preface
+\end_layout
+
+\begin_layout Standard
+In this part of the exercise I implemented several manifold learning algorithms:
+ MDS, LLE, DM.
+ We were asked to run our implementations of several data sets.
+\end_layout
+
+\begin_layout Subsection
+Random 2D data set
+\end_layout
+
+\begin_layout Standard
+For this part, we were asked to generate 2D data, embed it in a higher dimension
+(i chose 1000 dimensions), rotate it in an arbitrary direction in the higher
+ dimension and try to learn the manifold using MDS.
+ But firstly lets look at the scree plot of the data :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/University/Year 3/Semester 1/67750 Advanced Practical Course in Machine Learning/Exs/EX3/plots/Scree plot.png
+	lyxscale 60
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Scree plots for the data though all the steps
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we might have expected there are only 2 singular values which don't change
+ even if we rotate them in a higher dimension(sanity check) and once we
+ add noise there are some non zero singular values, but they are small if
+ the noise is small - if the noise is larger than it is indistinguishable
+ from the 
+\begin_inset Quotes eld
+\end_inset
+
+real
+\begin_inset Quotes erd
+\end_inset
+
+ singular value.
+ The results for MDS in this data with Gaussian noise(mean 0, var 1) are
+ shown in figure.2:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/University/Year 3/Semester 1/67750 Advanced Practical Course in Machine Learning/Exs/EX3/plots/MDS on 2d - 2d image gaussian noise.png
+	lyxscale 60
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+MDS plot on rand_2d_data (color is the original magnitude of the samples
+ in 2D) 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can see the data was restored to 2D space and the points seem to sit
+ in 2D space rather comfortably.
+ The original data magnitude in 2D space is shown in color and we can tell
+ from that that the embedding preserved the original data's orientation
+ and order - the color is continuous, as well as monotonous (in the outgoing
+ direction of the origin) as we would have expected.
+ In addition to evaluate the algorithms performance farther I ran the same
+ data but plotted it in 3D space: https://www.cs.huji.ac.il/~guy_lutsker/2d_rand_dat
+a_MDS_on_3d_graph_gussian_noise.html .
+ As we can see the data was restored to a 2D manifold rather beautifully
+ - the data seems to sit on a paraboloid(2D object in 3D space) which once
+ more confirms our embedding in 2D space.
+ When playing around with the mean nothing significant seems to happen,
+ but an interesting quirk that happens when we play around with the variance
+ is that the data approaches a 1D line in space :
+\end_layout
+
+\begin_layout Standard
+www.cs.huji.ac.il/~guy_lutsker/2d_rand_data_MDS_on_3d_graph_gussian_noise_with_high_
+var.html .
+ Also when using random noise(and not Gaussian) the data approaches a saddle:
+\end_layout
+
+\begin_layout Standard
+www.cs.huji.ac.il/~guy_lutsker/2d_randdata_MDS_on_3d_graph.html .
+\end_layout
+
+\begin_layout Subsection
+Swiss Roll Data Set
+\end_layout
+
+\begin_layout Standard
+Let us compare the results of MDS,LLE, DM on the Swiss roll data set.
+\end_layout
+
+\begin_layout Subsubsection
+MDS
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/University/Year 3/Semester 1/67750 Advanced Practical Course in Machine Learning/Exs/EX3/plots/q7_MDS2d.png
+	lyxscale 60
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+MDS plot on Swiss roll
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can wee the algorithm failed on this data set as we were not able
+ to capture the 2D manifold of the data.
+\end_layout
+
+\begin_layout Subsubsection
+LLE
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/University/Year 3/Semester 1/67750 Advanced Practical Course in Machine Learning/Exs/EX3/LLE_12_2d.png
+	lyxscale 60
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+MDS plot on rand_2d_data (color is the original magnitude of the samples
+ in 2D)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can wee the algorithm succeeded on this data set as we were able to
+ capture the 2D manifold of the data - we got an 
+\begin_inset Quotes eld
+\end_inset
+
+unrolling
+\begin_inset Quotes erd
+\end_inset
+
+ of the Swiss roll in 2D.
+\end_layout
+
+\begin_layout Standard
+3D plot : www.cs.huji.ac.il/~guy_lutsker/LLE_12n.html
+\end_layout
+
+\begin_layout Subsubsection
+Diffusion Map
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/University/Year 3/Semester 1/67750 Advanced Practical Course in Machine Learning/Exs/EX3/plots/q7_DM_2d.png
+	lyxscale 60
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+MDS plot on Swiss roll
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can wee the algorithm failed on this data set as we were not able
+ to capture the 2D manifold of the data.
+\end_layout
+
+\begin_layout Subsection
+Faces Data Set
+\end_layout
+
+\begin_layout Subsubsection
+MDS
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/University/Year 3/Semester 1/67750 Advanced Practical Course in Machine Learning/Exs/EX3/plots/faces_tests/MDS_5dims.png
+	lyxscale 60
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+MDS plot on faces data
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here we an see that the algorithm was able to 
+\begin_inset Quotes eld
+\end_inset
+
+catch
+\begin_inset Quotes erd
+\end_inset
+
+ something.
+ we can see that is a patch of dark images in the right corner which don't
+ really go with any thing else in the visualization.
+ But all other images behave rather well - we can see that faces were embedded
+ in space with some correlation to their orientation in space.
+ the left corner are faces looking to the left, and faces looking to the
+ right are in the top.
+ Overall it seems that this method succeeded.
+\end_layout
+
+\begin_layout Subsubsection
+LLE
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/University/Year 3/Semester 1/67750 Advanced Practical Course in Machine Learning/Exs/EX3/plots/faces_tests/LLE6.png
+	lyxscale 60
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+LLE plot on faces data
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is a very interesting result to my eyes.
+ First of all, I think we can agree the algorithm worked as we wanted.
+ Faces looking to the left are in the left of the plot, and faces looking
+ to the right are in the right of the plot.
+ But whats most interesting in my opinion, in the rather continuous transition
+ we see from looking to the left, to looking to the right, meaning faces
+ in the middle are looking with a duller angle.
+ In addition faces which are not looking to each side, are clustered as
+ well - faces looking down are in the middle up of the plot, and faces looking
+ up are in the middle bottom of the plot.
+\end_layout
+
+\begin_layout Subsubsection
+Diffusion Map
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/University/Year 3/Semester 1/67750 Advanced Practical Course in Machine Learning/Exs/EX3/plots/faces_tests/DM_11 time.png
+	lyxscale 60
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DM plot on faces data
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can wee the algorithm kind of worked, as the dark patch is in the
+ left of the plot, and faces are kind of clustered according to their orientatio
+n(less well then the others).
+ To get this I had to check a lot (A LOT) of options, and only an extreme
+ value to sigma(1000 - 2000) worked for me.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Conclusion
+\end_layout
+
+\begin_layout Standard
+It seemed that all method 
+\begin_inset Quotes eld
+\end_inset
+
+caught
+\begin_inset Quotes erd
+\end_inset
+
+ two major features in the images data set - orientation of the face(its
+ angle) and the lighting effects in the image, but altogether it seems like
+ all 3 algorithms did rather well.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Netflix Prize Dataset(NPD) - Practical Manifold Learning Research
+\end_layout
+
+\begin_layout Section
+Preface
+\end_layout
+
+\begin_layout Standard
+In this section we were asked to participate in an actual manifold learning
+ task from the real world on the Netflix prize dataset, using the tools
+ we learned in class.
+\end_layout
+
+\begin_layout Section
+Preprocessing
+\end_layout
+
+\begin_layout Standard
+To preprocess the Netflix Prize Dataset I used Matan's code which was published
+ in the piazza website.
+ To be totally honest, my first 3 days of the assignment were spent doing
+ exactly what Matan did, only he had found a file in google with the genres
+ of the movies, and I tried to mine that data myself from IMDB which took
+ me forever...
+ And as it usually happens in life, I found that someone else already did
+ what I tried and did it much better than I could have.
+ And so I decided to use Matan's code for preprocessing.
+\end_layout
+
+\begin_layout Section
+Exploring the DataSet
+\end_layout
+
+\begin_layout Subsection
+Embedding in Lower Linear Subspace
+\end_layout
+
+\begin_layout Standard
+The first thing I wanted to to is to reduce the dimensionality of the data
+ so I could start manipulating it.
+ Running the data though a linear reduction like PCA sounded like a good
+ idea at first, but when giving it a bit of research online, it looked a
+ though my data would not benefit from a standard PCA reduction.
+ The data consists of a very sparse matrix in an extremely high dimension
+ and from what I understood a good approach for this kind of data is replacing
+ PCA with TruncatedSVD.
+ From the Algorithms documentation: 
+\begin_inset Quotes eld
+\end_inset
+
+This transformer performs linear dimensionality reduction by means of truncated
+ singular value decomposition (SVD).
+ Contrary to PCA, this estimator does not center the data before computing
+ the singular value decomposition.
+ This means it can work with sparse matrices efficiently
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/University/Year 3/Semester 1/67750 Advanced Practical Course in Machine Learning/Exs/EX3/plots/netflix/TruncatedSVD as reviews.png
+	lyxscale 60
+	scale 20
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+TruncatedSVD on NPD)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 8.
+ shows how TruncatedSVD displaces the data onto 2 dimensions.
+ I wanted to understand the 2 dimensions TruncatedSVD 
+\begin_inset Quotes eld
+\end_inset
+
+chose
+\begin_inset Quotes erd
+\end_inset
+
+ and so based on this graph we can see that the first dimension correlates
+ pretty well with how well the movie did in terms of review scores (no additiona
+l intuition comes in 3D plot).
+ 
+\end_layout
+
+\begin_layout Subsection
+Exploring Non-Linear Dimension Reductions
+\end_layout
+
+\begin_layout Standard
+Next I wanted to see if I could explore the higher manifold of this data,
+ in order to do this we have to leave the comfortable linear subspaces and
+ turn to non linear approaches.
+\end_layout
+
+\begin_layout Subsubsection
+MDS
+\end_layout
+
+\begin_layout Standard
+The manifold learning algorithm I tried running was the MDS algorithm.
+ I ran it on the reduced data(50 linear dimensions): 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/University/Year 3/Semester 1/67750 Advanced Practical Course in Machine Learning/Exs/EX3/plots/netflix/mds rev.png
+	lyxscale 60
+	scale 20
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+MDS on NPD, color as review scores
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The major conclusion I can say about MDS is that it looks a lot like PCA/Truncat
+edSVD results - it looks like it explodes from the origin and correlated
+ with review scores.
+ In addition they both look like a funnel in 3D space.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+LLE
+\end_layout
+
+\begin_layout Standard
+Next I tried running LLE on the data set.
+ I tried multiple parameters and got the following results:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/University/Year 3/Semester 1/67750 Advanced Practical Course in Machine Learning/Exs/EX3/plots/netflix/LLE_20_neighbors.png
+	lyxscale 60
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+LLE on NPD, color as review scores
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+I tried running this method with many different parameters(number of neighbors,
+ number of components,looking at different components,etc..) and non seemed
+ to show a meaningful result, I thought about not including this plot, but
+ I spent so long trying to tune the parameters to see something at that
+ it seemed like a waste.
+\end_layout
+
+\begin_layout Subsubsection
+Diffusion Map
+\end_layout
+
+\begin_layout Standard
+Another non linear approach we already saw is diffusion maps.
+ I tried running the algorithm on the reduced data(50 linear dimensions)
+ set with different parameters and got the following results:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/University/Year 3/Semester 1/67750 Advanced Practical Course in Machine Learning/Exs/EX3/plots/netflix/dm with rev as color.png
+	lyxscale 60
+	scale 20
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DM on NPD, color as review scores 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Figure 9.
+ shows us the results of DM of the dataset, and we can see that algorithm
+ was able to capture some features in the data.
+ For example we can once more see that the first dimension of the DM is
+ correlated with review scores.
+ And it is also interesting to see the 3D plot of the DM: www.cs.huji.ac.il/~guy_lut
+sker/DM_3d_by_rev_logged.html .
+ And colored by genera: www.cs.huji.ac.il/~guy_lutsker/DM_3d_by_gen.html .
+ Firstly the 3D graph here is very interesting since the data in the 3D
+ DM seems to sit on a 2D plane(non linear though, and so it will not appear
+ well on a 2D DM) And so it might be interesting to run 2D LLE on top of
+ the 3D DM to see how the manifold behaves(Guy from the future here, unfortunate
+ly it didn't work...) .
+ Secondly we can again see that review score is highly impacting the manifolds
+ shape, but movie genera(which I always looked at and tried to color by
+ it) is, sadly, not correlated to any axis in the DM.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+t-SNE
+\end_layout
+
+\begin_layout Standard
+The first actual non linear dimension reduction I tried was t-SNE.
+ t-SNE is a tool to visualize high-dimensional data.
+ It converts similarities between data points to joint probabilities.
+ The results:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/University/Year 3/Semester 1/67750 Advanced Practical Course in Machine Learning/Exs/EX3/plots/netflix/tsne gen.png
+	lyxscale 60
+	scale 20
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+t-SNE on NPD, color as genres
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This time I decided to show the coloring against movie genres(since the
+ coloring against reviews looked like all others, and wasn't really interesting)
+ and this time we actually see some coloring according to movie genres!
+ It's not entirely obvious and its hard to say whether this is conclusive(will
+ try to check in clustering analysis further) but in each method I tried
+ to look at movie genres and here its the first time that some genres seemed
+ to cluster together.
+\end_layout
+
+\begin_layout Subsubsection
+UMAP
+\end_layout
+
+\begin_layout Standard
+Another non linear dimension reduction I tried was UMAP, UMAP is a relatively
+ modern approach to non linear dimension reduction, and this method tried
+ to preserve the topology of the data in the higher dimension(in more recent
+ research UMAP starts to overtake t-SNE).
+ My results with UMAP:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/University/Year 3/Semester 1/67750 Advanced Practical Course in Machine Learning/Exs/EX3/plots/netflix/UM2_7 neighbors fav.png
+	lyxscale 60
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+UMAP on NPD, color as genres
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This results seems to be very similar to t-SNE, there isn't a major conclusion
+ here besides that it has(maybe?) some correlation with movie genres.
+ Although I have to say I'm pretty disappointing since I expected this method
+ to be victorious, and that I would see something interesting in this visualizat
+ion.
+ I feel like I have to emphasize that I gave this method a lot of effort
+ and generated around ~200 graphs on UMAP attempts alone, just to try and
+ find good parameters to run it with with no luck :(
+\end_layout
+
+\begin_layout Subsection
+Clustering
+\end_layout
+
+\begin_layout Standard
+The next intuitive step was trying to cluster the data.
+ Since I didn't know which visualization represented the data I decided
+ to look at TruncatedSVD, TSNE, DM.
+ I decided to cluster to 20 clusters because of 2 reasons: 1.
+ In my heart I really wanted the data to cluster according to the movie
+ genres, and since there were ~28 movie genres in the data, a number of
+ clusters around this number was attractive.
+ 2.
+ I decided to look at visualizations of all 3 methods in any numbers of
+ clusters between 3 - 30 and above 20 the clusters were not really changing
+ too much, and the visualization seemed well enough for my purpose in 20
+ clusters, and so I decided to go with 20.
+ A note about this issue: I am aware that my reasoning here is not perfect,
+ in particular choosing the number of clusters based on the visualization
+ alone could be a terrible idea since the visualization always lies to us(we
+ just never how).
+ But since I could spend weeks on this issue alone, that this line of reasoning
+ is good enough.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/University/Year 3/Semester 1/67750 Advanced Practical Course in Machine Learning/Exs/EX3/plots/netflix/clusters.png
+	lyxscale 60
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Clustering the NPD using KMeans
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can see its hard to reach any meaningful conclusion from this clustering
+ visualization.
+ My hopes for clustering according to movie genres weren't really met, to
+ say the least.
+ The only interesting part of this Visualization is the left most cluster
+ in the TSNE plot - it seems to be correlated with orange cluster(actually
+ movie genre) in Figure 13.
+ 
+\end_layout
+
+\begin_layout Subsection
+Discussion & Conclusions
+\end_layout
+
+\begin_layout Subsubsection
+My Work 
+\end_layout
+
+\begin_layout Standard
+This was a very interesting(yet hard) exercise in manifold learning, we
+ were given a data set with no further guidance and were asked to 
+\begin_inset Quotes eld
+\end_inset
+
+research
+\begin_inset Quotes erd
+\end_inset
+
+ it somehow.
+ It was a really large data set and so it was very hard to handle it - opening
+ it on my computer nearly crashed it, and every subsequent time froze my
+ computer for the duration of the run(even trying to work on it though the
+ university's cluster didn't really work).
+ Though out my work I really wanted to find a reduction in dimension that
+ will 
+\begin_inset Quotes eld
+\end_inset
+
+cluster
+\begin_inset Quotes erd
+\end_inset
+
+ the movies by genera, and I was really disappointed when no method really
+ obtained the resulted I was hoping for.
+ Perhaps running the algorithms with more samples(I only ran 50,000 samples)
+ will yield better results or maybe better preprocessing/filtration of the
+ data will help.
+ Another thing I tried was checking whether the release date of the movie
+ correlated with some axis of visualization and I checked it each time and
+ never really saw something worth showing/noting :(
+\end_layout
+
+\begin_layout Standard
+On a personal note, despite that this exercise was very difficult for me,
+ I work in a lab(Dr.
+ Naomi Habib, Computational Neuroscience) that works with Single-Cell RNA
+ data and it was very close the research I do in my work, and so I enjoyed
+ the exercise :) .(Future Guy here again, its the day of the submission,
+ and I was just informed that Spectral clustering of scikit doesn't exactly
+ do diffusion map, although its very similar.
+ and so I'm sorry for the misdirection, I ran Spectral clustering, not DM)
+\end_layout
+
+\begin_layout Subsubsection
+Further Research
+\end_layout
+
+\begin_layout Standard
+I feel like if I had more time I would have tried several other methods
+ for exploring the manifold of this data set.
+ I would have separated the data into genera to begin with, and then tried
+ to learn each manifold separately - maybe something interesting would have
+ come up in one of MDS,DM,t-SNE,UMAP etc...
+ In addition I would have loved to try More clustering algorithms(perhaps
+ even soft assignment ones) on the data to see how it will behave, but I
+ didn't really have an intuition for other types of clustering methods,
+ and I didn't want to just run other ones I am not familiar with just for
+ more graphs.
+\end_layout
+
+\begin_layout Standard
+Another branch of thinking that I gave a lot of effort was tying to run
+ some NLP algorithm on this data set, I will explain - I had two major ideas
+ here: 1.
+ running an LDA Topic modeling on top of the movie titles to see if it cluster(s
+oft cluster according to topic assignment) according to genres.
+ 2.
+ running a Grade Of Membership algorithm on top of the sparse data matrix
+ to see how the data will rearrange it self - perhaps a more continuous
+ approach will yield better results.
+ Unfortunately both ideas didn't really work(I only ever ran these kind
+ of algorithms in R language and for some reason running them in python
+ gave my trouble).
+ I probably could have made it work but since I am a only a Bachelor student,
+ I didn't really have the time to make it work(although I did gave this
+ exercise a lot of effort), but I thought it was an interesting idea to
+ mention it at least.
+\end_layout
+
+\end_body
+\end_document
