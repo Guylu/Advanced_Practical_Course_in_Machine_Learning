@@ -1,0 +1,1312 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{fullpage}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "David"
+\font_typewriter "default" "Curlz MT"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sumin}{\sum_{i=1}^{n}}
+{\sum_{i=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjn}{\sum_{j=1}^{n}}
+{\sum_{j=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumim}{\sum_{i=1}^{m}}
+{\sum_{i=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjm}{\sum_{j=1}^{m}}
+{\sum_{j=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumik}{\sum_{i=1}^{k}}
+{\sum_{i=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjk}{\sum_{j=1}^{k}}
+{\sum_{j=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkn}{\sum_{k=1}^{n}}
+{\sum_{k=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumnk}{\sum_{n=1}^{k}}
+{\sum_{n=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkm}{\sum_{k=1}^{m}}
+{\sum_{k=1}^{m}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ser}[3]{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vn}{v_{1},v_{2},...v_{n}}
+{v_{1},v_{2},...v_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vm}{v_{1},v_{2},...v_{m}}
+{v_{1},v_{2},...v_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}{u_{1},u_{2},...u_{n}}
+{u_{1},u_{2},...u_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{u_{1},u_{2},...u_{m}}
+{u_{1},u_{2},...u_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vk}{v_{1},v_{2},...v_{k}}
+{v_{1},v_{2},...v_{k}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\vecmul}[6]{\left[\begin{matrix}#1\\
+ #2\\
+ #3 
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+ #5\\
+ #6 
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+ \left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+ \left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right) 
+\end{matrix}\right]}
+{\left[\begin{matrix}#1\\
+#2\\
+#3
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+#5\\
+#6
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+\left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+\left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right)
+\end{matrix}\right]}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\lim}[1]{\lim_{n\rightarrow\infty}\left(#1\right)}
+{\lim_{n\rightarrow\infty}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\rank}{\text{Rank}}
+{\text{Rank}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\im}{\text{Im}}
+{\text{Im}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sp}{\text{Span}}
+{\text{Span}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyF}{\mathscr{F}}
+{\mathscr{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyB}{\mathscr{B}}
+{\mathscr{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseA}{\mathcal{A}}
+{\mathcal{A}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseB}{\mathcal{B}}
+{\mathcal{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseC}{\mathcal{C}}
+{\mathcal{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\FF}{\mathbb{F}}
+{\mathbb{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\CC}{\mathbb{C}}
+{\mathbb{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\RR}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\QQ}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\NN}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ZZ}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliCupDot}{\mathbin{\cupdot}}
+{\mathbin{\dot{\cup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliBigCupDot}{\mathbin{\bigcupdot}}
+{\mathbin{\dot{\bigcup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\PP}{\mathbb{P}}
+{\mathbb{P}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\EE}{\mathbb{E}}
+{\mathbb{E}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\nab}{\overline{\nabla}}
+{\overline{\nabla}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\supp}{\text{Supp}}
+{\text{Supp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\geo}{\text{Geo}}
+{\text{Geo}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\bin}{\text{Bin}}
+{\text{Bin}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ber}{\text{Ber}}
+{\text{Ber}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\poi}{\text{Poi}}
+{\text{Poi}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\exp}{\text{Exp}}
+{\text{Exp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\cov}{\text{Cov}}
+{\text{Cov}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\var}{\text{Var}}
+{\text{Var}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sinc}{\text{sinc}}
+{\text{sinc}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ra}{\text{\ensuremath{\rightarrow}}}
+{\text{\ensuremath{\rightarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\la}{\text{\ensuremath{\leftarrow}}}
+{\text{\ensuremath{\leftarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\iff}{\text{\ensuremath{\Leftrightarrow}}}
+{\text{\Leftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\E}{\text{\ensuremath{\exists}}}
+{\text{\ensuremath{\exists}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\RA}{\text{\ensuremath{\Rightarrow}}}
+{\text{\ensuremath{\Rightarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\LA}{\text{\ensuremath{\Leftarrow}}}
+{\text{\ensuremath{\Leftarrow}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\li}{\text{\ensuremath{\langle}}}
+{\text{\langle}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ri}{\rangle}
+{\text{\rangle}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}{\begin{bmatrix}\end{bmatrix}}
+{\begin{bmatrix}\end{bmatrix}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\T}{^{\intercal}}
+{^{\intercal}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\xor}{\oplus}
+{\oplus}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\norm}{\Vert}
+{\Vert}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\2}{^{2}}
+{^{2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\and}{\wedge}
+{\wedge}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Title
+67750 | Advanced Practical Course in Machine Learning
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\xout default
+\lang hebrew
+|
+\xout off
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+Exercise 
+\numeric on
+\lang hebrew
+1
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\end_layout
+
+\begin_layout Author
+Guy Lutsker 207029448
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Understanding The Data
+\end_layout
+
+\begin_layout Standard
+Firstly I started by looking our data, here we got a training sample of
+ 5625 labeled pictures(
+\begin_inset Formula $32\times32$
+\end_inset
+
+ pixels) of either cars, trucks, or cats.
+\end_layout
+
+\begin_layout Standard
+The first thing I noticed is that most of the data were pictures of cars.
+\end_layout
+
+\begin_layout Standard
+The second thing I noticed, is that there were a lot of mislabeled pictures:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted1.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cat Mislabeled As a Car.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And so the first challenge I was facing is thinking how to manage this corrupted
+ data set.
+\end_layout
+
+\begin_layout Section
+Performance
+\end_layout
+
+\begin_layout Subsection
+Initial Performance
+\end_layout
+
+\begin_layout Standard
+Next I tried running the naive network provided for us.
+ The results(unsurprisingly) were not great: The network ran with 88% accuracy,
+ which sounds not too bad, but when I dove into the labelings themselves
+ I saw a big issue - the network simply labeled every single sample as a
+ car - and since most of the samples were cars the accuracy seemed high.
+ The training data results can be show in the next confusion matrix:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted2.png
+	lyxscale 60
+	scale 60
+	BoundingBox 3bp 3bp 650bp 146bp
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Initial Train Error Results of Naive Network
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+And the test data result:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted4.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Initial Test Error Results of Naive Network
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Next, since most of the mislabeling was classifying objects as cars, I thought
+ of trying to train the network the cats and trucks.
+ It seemed that most of the data that was really trucks/cats was a true
+ labeling(actually, the trucks were labeled correctly, and cats were mostly
+ fine..).
+ my results were(82% accuracy):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted5.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Initial Test Error Results of Naive Network on Trucks & Cats
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Possible Improvements
+\end_layout
+
+\begin_layout Standard
+When looking over the naive general code provided that generated the neural
+ network, some immediate possible improvements came to mind.
+ Firstly we needed to address the unbalances data - the fact that there
+ were mostly cars in the data set.
+ To overcome this issue I opted to use the WeightedRandomSampler tool in
+ Pytorch - basically gave it a batch size of a certain size and let the
+ network train over batches with balanced number of samples in each class.
+ Next I wanted to address the default parameters of the network - I tried
+ using the Adam optimizer, and tried using different learning rates.
+ In addition I increased the epoch size.
+ Over all, at this stage of development I found that the following hyper
+ parameters gave the best results(90% accuracy in the next table): Using
+ the Adam optimizer, default learning rate, batch size of 5, and an epoch
+ magnitude of 20:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted8.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Performance After Initial Optimization Attempt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First of all we see an increase in the accuracy(88
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+90), but more importantly we see a generalization in the way the network
+ classifies the data - it no longer classified every single sample as a
+ car! a big improvement in the right direction(I saw an even bigger generalizati
+on when running with epoch of magnitude 50, but it had 88% accuracy).
+ This means the 
+\shape italic
+WeightedRandomSampler
+\shape default
+ tool helped, but with limited successes, since it still struggles with
+ cats.
+ To try and solve this issue I had a idea to maybe try and relabel the cats
+ using the cat/truck network.
+ In more detail, maybe we can take images labeled as cars, and run them
+ trough the truck/cat network, and if we label a car as a cat, we can assume
+ it was a cat mislabeled as a car, and relabel it correctly.
+ The motivation is based of the idea that cars should(maybe) look more like
+ trucks, and so if the trucks/cats network labeled a car as a truck it is
+ a car, and if it labeled it as a cat, it is a mislabeled cat.
+ With this idea at heart I applied the improvements from the general net
+ to the truck/cat net and got 93-94% accuracy:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted6.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Performance After Initial Optimization Attempt on Trucks & Cats Network
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+As it turns out this idea(as logical as it seemed in the beginning) did
+ not prove to be as successful as I initially hoped.
+ When I ran the cars from the test data on the trucks/cats network I saw
+ the network still mislabeled cats as cars with a very high probability.
+ Using 
+\shape italic
+softmax
+\shape default
+ I tried to establish a threshold for a 
+\begin_inset Quotes erd
+\end_inset
+
+confidence
+\begin_inset Quotes erd
+\end_inset
+
+ score and see how confident was the labeling, unfortunately the results
+ were as follows: The average confidence score of cars bring tagged as cats
+ was 0.90319, whilst the same for cats(tagged initially as cars) was 0.948055
+ - also there were a lot of cars being tagged as cats with a score of 100%.
+ That meant that even if I chose a really high threshold it wouldn't do
+ much - from a quick calculation I saw that even if I set the threshold
+ score for relabeling a car to a cat if the network(truck&cat) tagged it
+ as a cat with 0.999 confidence I would have mislabeled 10(out of 57 in test
+ set) cars as cats, and only relabeled correctly 5(out of 11 in test set)
+ cats who were mislabeled initially as cars.
+ And so, sadly it seems that this idea wont be used :(
+\end_layout
+
+\begin_layout Subsection
+Augmentation
+\end_layout
+
+\begin_layout Standard
+With the disappointment of my previous ideas, I turned to the augmentation
+ method.
+ Augmentation is basically when we try to enlarge our training set by 
+\begin_inset Quotes eld
+\end_inset
+
+simulating
+\begin_inset Quotes erd
+\end_inset
+
+ more data from our training set.
+ For example, by taking an image and cropping it, resulting in another image
+ we can label with the same label as the original, and thusly we magically
+ increased our training data.
+ Its important to state that these methods should be used cautiously, since
+ it could easily cause overfitting issues with the resulting model.
+ I tried training the same network using 
+\shape italic
+torchvision.transforms 
+\shape default
+with the following transforms: Horizontal/Vertical flips, Grayscale,Perspective,
+ Normalization, and various rotations.
+ Unfortunately this method did not prove to be useful as well, The resulting
+ network seemed to have just about the same average accuracy - 90% accuracy
+ for all classes, and 93% for trucks/cats.
+ And so, this seems like a bust as well.
+\end_layout
+
+\begin_layout Subsection
+Adaptive Learning Rate
+\end_layout
+
+\begin_layout Standard
+Another attempt I had at trying and increase the performance of my network
+ was using various kinds of adaptive learning rates.
+ The idea behind changing the learning rate though out the training process,
+ is that during learning we are trying to find an optimum of a function.
+ And so in the beginning we try to have 
+\begin_inset Quotes eld
+\end_inset
+
+big steps
+\begin_inset Quotes erd
+\end_inset
+
+ in the direction of the optimum, and as we approach, we want to decrease
+ out steps in order to keep ourselves near the optimum(and not 
+\begin_inset Quotes eld
+\end_inset
+
+fall
+\begin_inset Quotes erd
+\end_inset
+
+ to a near by local minima/maxima).
+ Here I tried using several initial learning rates(usually around 
+\begin_inset Formula $1\times10^{-4}$
+\end_inset
+
+), and various ways to try and decrease it(usually multiplying by 
+\begin_inset Formula $0.1$
+\end_inset
+
+ every several epochs, or passes though the sample data), and all seemed
+ to have very little effect on the network accuracy, it looked like almost
+ nothing I did using traditional methods of trying to increase the networks
+ performance worked.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Analyzing Learning Rate
+\end_layout
+
+\begin_layout Standard
+In this section I seek to evaluate how the learning rate effects the learning
+ process.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename lrs.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Different Learning Rates Effect on Loss
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+As we can see in Figure.7 different learning rates have a big effect on the
+ loss generated by the network.
+ We can see that when the learning rate is low the network has a hard time
+ converging to an optimum, and the final training loss is staying consistently
+ relatively high.
+ On the other side of the spectrum, if the learning rate is too high we
+ see that network cant converge to a 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+ solution as well.
+ Yet if the learning rate is just right(a good example is 
+\begin_inset Formula $1\times10^{-4}$
+\end_inset
+
+) the loss is able to gradually decrease and converge to a minima.
+ A note about really high learning rates(
+\begin_inset Formula $>1$
+\end_inset
+
+): in extremely high learning rates I was expecting to see the loss function
+ go crazy and not be able to converge at all.
+ Yet here the final loss was 0, I am not quite sure why this happens(maybe
+ such a high learning rate breaks something in Pytorch code? or maybe its
+ part of my grandiose delusions to think I can break something in Pytorch
+ code).
+ The intuition behind how Learning rates effect the convergence quality
+ is given in subsection 2.4.
+\end_layout
+
+\begin_layout Section
+Adversarial Analysis
+\end_layout
+
+\begin_layout Standard
+In order to show that we are still able to fool our network, in this section
+ I will try to create an adversarial example of a picture of a cat being
+ labled by our network as a truck.
+ In order to do this, I will take my model, and 
+\begin_inset Quotes eld
+\end_inset
+
+take out
+\begin_inset Quotes erd
+\end_inset
+
+ its parameters, so i can train it on a picture of a cat, whilsy telling
+ the model its label is a truck.
+ I will take the resulting weights, and apply them on an empty image to
+ capture the noise:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename noise.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Noise Generated By The Adversarial Method
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And so we can add it to an image of a cat, and to our eyes we wont see much
+ of a difference, but our network will be fooled.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename cat.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pre Cat Treatment Being Labeled As A Cat
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename cat with noise.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Post Cat Being Labeled As A Truck
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
